@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zarządzanie Katalogiem</title>
+</head>
+
+<body>
+    <h1>Zarządzanie katalogiem</h1>
+    <form action="index.php" method="post">
+        <label for="path">Podaj ścieżkę katalogu:</label>
+        <input type="text" id="path" name="path" placeholder="./php/images/network" required><br><br>
+
+        <label for="dirname">Nazwa katalogu:</label>
+        <input type="text" id="dirname" name="dirname" required><br><br>
+
+        <label for="operation">Wybierz operację:</label>
+        <select id="operation" name="operation">
+            <option value="read">Odczytaj zawartość</option>
+            <option value="delete">Usuń katalog</option>
+            <option value="create">Stwórz katalog</option>
+        </select><br><br>
+
+        <button type="submit">Wykonaj operację</button>
+    </form>
+</body>
+
+</html>
